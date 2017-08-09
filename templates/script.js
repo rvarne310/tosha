@@ -7,7 +7,7 @@ var update = function ($scope, $http) {
         url: '/update',
     }).then(function (response) {
         var JSONData = response.data;
-        $scope.msg = JSONData["speech"];
+        $scope.msg = JSONData;
     }, function (error) {
         console.log(error);
     });
