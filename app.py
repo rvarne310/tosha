@@ -110,6 +110,13 @@ def update():
     r.headers['Content-Type'] = 'application/json'
     return r
 
+@app.route('/root')
+def rootTosha():
+    return render_template('index.html')
+
+@app.route('/index.html')
+def htmlTosha():
+    return render_template('index.html')
 
 @app.route('/')
 def tosha():
