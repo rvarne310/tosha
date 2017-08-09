@@ -17,7 +17,7 @@ HOST = "https://xmlpitest-ea.dhl.com"
 API_URL = "/XMLShippingServlet"
  
 # Flask app should start in global layout
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
  
  
 @app.route('/webhook', methods=['POST'])
