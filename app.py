@@ -115,6 +115,10 @@ def update():
 def tosha():
     return render_template('index.html')
 
+@app.route('/script.js')
+def tosha():
+    return render_template('script.js')
+
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 5000))
     print("Starting app on port"+ str(port))
