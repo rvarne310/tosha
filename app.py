@@ -116,7 +116,7 @@ def tosha():
     return render_template('index.html')
 
 @app.route('/script.js')
-def tosha():
+def loadScript():
     return render_template('script.js')
 
 if __name__ == '__main__':
