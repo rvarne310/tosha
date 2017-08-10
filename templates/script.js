@@ -2,6 +2,7 @@
 
 var update = function ($scope, $http) {
     console.log("fine");
+    $scope.test = "OK";
     $http({
         method: 'POST',
         url: '/update',
